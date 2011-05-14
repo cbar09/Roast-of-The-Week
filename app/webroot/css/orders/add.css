@@ -1,0 +1,9 @@
+div.orders {padding: 10px;}
+div.orders legend {font-size: 24px; margin-bottom: 1em; text-transform:uppercase;}
+div#order-info > * {
+	display: inline-block;
+	margin: 0 10px;
+	vertical-align: middle;
+}
+div#order-info .quantity * {width: 60px; }
+div#order-info label {display: inline-block;}

@@ -1,0 +1,281 @@
+/*  HTML5 ✰ Boilerplate  */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,  footer, header, hgroup, 
+menu, nav, section, summary, time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}                  
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display:block;
+}
+nav ul { list-style:none; }
+blockquote, q { quotes:none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content:''; content:none; }
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
+ins { background-color:#ff9; color:#000; text-decoration:none; }
+mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }
+table { border-collapse:collapse; border-spacing:0; }
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+input, select { vertical-align:middle; }
+
+
+body { font:13px/1.231 sans-serif; *font-size:small; } 
+select, input, textarea, button { font:99% sans-serif; }
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+body, select, input, textarea {   color: #444; }
+h1,h2,h3,h4,h5,h6 { font-weight: bold; }
+html { overflow-y: scroll; }
+
+a:hover, a:active { outline: none; }
+a, a:active, a:visited { color: #607890; }
+a:hover { color: #036; }
+
+/*ul, ol { margin-left: 1.8em; }*/
+ul {list-style-type: none;}
+ol { list-style-type: decimal; }
+
+nav ul, nav li { margin: 0; } 
+small { font-size: 85%; }
+strong, th { font-weight: bold; }
+td, td img { vertical-align: top; } 
+sub { vertical-align: sub; font-size: smaller; }
+sup { vertical-align: super; font-size: smaller; }
+pre {  padding: 15px;  white-space: pre;  white-space: pre-wrap;  white-space: pre-line;  word-wrap: break-word; }
+textarea { overflow: auto; } 
+.ie6 legend, .ie7 legend { margin-left: -7px; } 
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+label, input[type=button], input[type=submit], button { cursor: pointer; }
+button, input, select, textarea { margin: 0; }
+input:valid, textarea:valid   {  }
+input:invalid, textarea:invalid { border-radius: 1px;  -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red;  box-shadow: 0px 0px 5px red; }
+.no-boxshadow input:invalid, 
+.no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
+::selection { background:#FF5E99; color:#fff; text-shadow: none; } 
+a:link { -webkit-tap-highlight-color: #FF5E99; } 
+
+button {  width: auto; overflow: visible; }
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.hidden { display: none; visibility: hidden; } 
+.visuallyhidden { position: absolute !important; clip: rect(1px 1px 1px 1px);  clip: rect(1px, 1px, 1px, 1px); }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after {  content: "\0020"; display: block; height: 0; visibility: hidden;	 } 
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+ /* Primary Styles
+    Author: Carl Barth
+ */
+
+html {
+	background-color: #E3DBD1;
+	background: 
+		url('../img/burlap-back-middle-60.jpg') top center repeat-y,
+		url('../img/burlap-bottom-fade-60.jpg') bottom center no-repeat;
+}
+
+body {
+	color: #2B2718;
+	font-family: 'Copse', sans-serif;
+}
+sidebar#menu{
+	position: absolute;
+	top: 10px;
+	left: -160px;
+}
+sidebar > *{
+	position: relative; 
+	z-index: -1; 
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+sidebar img:hover {
+    cursor: pointer;	
+}
+
+
+
+#facebook-tab, #twitter-tab {margin-left: 90px;}
+div.newsletter {
+	margin: 150px 0;
+	background: url('../img/menu/menubutton_newsletter.png');
+	width: 180px;
+	text-align: center;
+}
+
+section#main {
+	background: url('../img/paper_repeatable_texture.png') top center repeat-y;
+	z-index: 0; 
+}
+
+div#container {position: relative;}
+
+#logo {float: left; margin: 0 0 0 0;}
+header {position: relative; z-index: 2; margin-top: 15px;}
+header hgroup {
+	display: inline-block; 
+	margin: 5px 0px 10px 0px; 
+	text-align: center;
+}
+header hgroup h1 {font-size: 60px;}
+header hgroup hr {margin: 0 0 10px 0;}
+header hgroup h2 {font-size: 36px; text-align: left; margin: 2%;}
+
+img#bottom-image {position: absolute; top: 840px; z-index: -5; width: 1350px; left: 0px;}
+img#top-image {position: absolute; top: 0; z-index: -2; width: 1350px; left: 0px;}
+
+div.newsletter input {width: 120px; margin: 70px 18px 10px;}
+
+#top-panel {
+	position: relative; 
+	height: 273px; 
+	margin-bottom: 5px; 
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: 8px solid #493B27;}
+#roaster {text-align-center; position: absolute; right: 38px; bottom: -315px; z-index: 2; width: 265px;}
+
+.background {background-color: gray; padding: 10px;}
+
+#slideshow-images {height: 100%;}
+
+#slideshow-captions li:first-child, #slideshow-images li:first-child{display: inline-block;}
+#slideshow-images li {width: 100%;}
+#slideshow-captions li, #slideshow-images li{display:none;}
+
+#slideshow-captions{
+	font-family: Arial;
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	bottom: 0px;
+	z-index: 5;
+	color: white;
+	background-color: rgba(30,30,30, 0.6);
+}
+
+#slideshow-captions li {
+	height: 50px;
+	margin: 10px 15px;
+}
+
+p#description{
+	font-family: Arial;
+	text-align: justify;
+	font-size: 15px;
+	line-height: 22px;
+	margin: 1em 2em 0 0;
+}
+
+div#order-box {
+	margin-top: 1em;
+	background-color: #FCFAF5;
+	color: #3F3491;
+	border: 2px solid #493B27;
+	min-height: 200px;
+	position: relative;
+	z-index: 2;
+}
+
+img#buy-now-button {
+	position: absolute;
+	bottom: 10px;
+	right: -55px;	
+}
+
+.short {width: 80px;}
+div.input {margin: 1.25em 0;}
+div.input > * {vertical-align: baseline;}
+div.input select {width: 150px; margin-right: 20px;}
+/*div.input a {width: 100px;}*/
+p.copy {text-align: center;}
+
+label {
+	width: 100px;
+	display: inline-block; 
+	margin-left: 15px; 
+	font-size: 14px;
+}
+
+#price-text {
+	margin: 1.0em 0 0 0.5em;
+	color: #493B27; 
+	font-size: 30px;
+}
+
+div.break {
+	padding: 1px; 
+	height: 1px; 
+	margin: 20px 40px 0 0; 
+	background-color: #ACAAA5;
+}
+
+div#suggestions {
+	margin-top: 1em;	
+}
+
+div#suggestions ul { text-align: center;}
+
+div#suggestions li {
+	font-family: Arial; display: inline-block; margin: 10px 30px; width: 130px;}
+}
+
+div.orders {
+	boder: 3px solid ;
+}
+
+
+@font-face {font-family: Lithos; src: url('../files/LithosPro-Regular.otf');}
+@font-face {font-family: Lithos; font-weight: bold; src: url('../files/LithosPro-Black.otf');}
+
+
+@media all and (orientation:portrait) { 
+  
+}
+
+@media all and (orientation:landscape) { 
+  
+}
+
+@media screen and (max-device-width: 480px) {
+  
+  
+  /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+}
+
+@media print {
+  * { background: transparent !important; color: #444 !important; text-shadow: none !important; }
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a:after { content: " (" attr(href) ")"; } 
+  abbr:after { content: " (" attr(title) ")"; }
+  .ir a:after { content: ""; }  
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; }  
+  tr, img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+}
+
